@@ -66,6 +66,7 @@
   --p_124:7.75rem; /* pt */
   --p_112:7rem; /* pt */
   --p_98:6.125rem; /* pt */
+  --p_21:1.3125rem;
 
   --m_78:4.875rem;
   --m_42:2.625rem;
@@ -73,6 +74,8 @@
   --m_35:2.1875rem;
   --m_32:2rem;
   --m_20:1.25rem;
+
+  --rounded_20:1.25rem;
 }
 
 body {
@@ -132,14 +135,14 @@ a{
 .pt_124{padding-top: var(--p_124);}
 .pt_112{padding-top: var(--p_112);}
 .pt_98{padding-top: var(--p_98);}
-
+.p_21{padding: var(--p_21);}
 .mb_78{margin-bottom: var(--m_78);}
 .mb_42{margin-bottom: var(--m_42);}
 .mb_40{margin-bottom: var(--m_40);}
 .mb_35{margin-bottom: var(--m_35);}
 .mb_32{margin-bottom: var(--m_32);}
 .mb_20{margin-bottom: var(--m_20);}
-
+.rounded_20{border-radius: var(--rounded_20);}
 /* components */
 .btn {
   line-height: 1.55;
@@ -574,14 +577,35 @@ a{
   text-decoration: none;
 }
 .features_box{
+  position: relative;
   color: var(--c_black);
-  padding: 72px 106px 88px;
+  padding: 4.5rem 4.375rem 5.5rem;
   background: linear-gradient(90deg, #E0C3FC 0%, #8EC5FC 100%);
-  border: 10px solid rgba(255, 255, 255, 0.15);
-  border-radius: 93px;
-  background-size: calc(100% + 24px);
+  border: 0.625rem solid rgba(255, 255, 255, 0.15);
+  border-radius: 5.8125rem;
+  background-size: calc(100% + 1.5rem);
   background-position: center;
-
+}
+.features_boxLogo{
+  position: absolute;
+  right: 8.4375rem;
+  top: -3.1875rem;
+  width: 6.75rem;
+  height: 6.75rem;
+}
+.features_boxTitle{
+  padding-left: 11.5rem;
+  padding-right: 11.5rem;
+  background-image: url("data:image/svg+xml,%3Csvg width='112' height='7' viewBox='0 0 112 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M106.333 3.49999C106.333 2.02723 107.527 0.833324 109 0.833324C110.473 0.833324 111.667 2.02723 111.667 3.49999C111.667 4.97275 110.473 6.16666 109 6.16666C107.527 6.16666 106.333 4.97275 106.333 3.49999ZM-4.37114e-08 3L109 2.99999L109 3.99999L4.37114e-08 4L-4.37114e-08 3Z' fill='black'/%3E%3C/svg%3E%0A"),
+    url("data:image/svg+xml,%3Csvg width='112' height='7' viewBox='0 0 112 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.66666 3.49999C5.66666 2.02723 4.47276 0.833324 3 0.833324C1.52724 0.833324 0.333336 2.02723 0.333336 3.49999C0.333336 4.97275 1.52724 6.16666 3 6.16666C4.47276 6.16666 5.66666 4.97275 5.66666 3.49999ZM112 3L3 2.99999L3 3.99999L112 4L112 3Z' fill='black'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: left center,right center;
+  background-size: 109px;
+}
+.tick_icon{
+  width: 2.8125rem;
+  height: 2.8125rem;
+  margin-bottom: 0.8125rem;
 }
 /* ... end features section ... */
 
