@@ -81,7 +81,9 @@ body {
   font-weight: 500;
   background-color: var(--bg_light);
 }
-
+a{
+  color: var(--c_primary);
+}
 .c_primary{color: var(--c_primary);}
 .c_black{color: var(--c_black);}
 .c_dark{color: var(--c_dark);}
@@ -491,7 +493,7 @@ body {
 .title_badge{
   color: var(--c_primary);
   display: inline-block;
-  padding: 4px 14px 4px 12px;
+  padding: 0.25rem 0.875rem 0.25rem 0.75rem;
   background: #FFFFFF;
   border: 1px solid #DFE1E7;
   box-shadow: 0px 1px 3px rgba(13, 13, 18, 0.05), 0px 1px 2px rgba(13, 13, 18, 0.04);
@@ -525,23 +527,61 @@ body {
   line-height: 1;
   text-rendering: auto;
 }
+.features_row>*:nth-of-type(2n+1) .feature_card{
+
+}
 .feature_card{
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 37px;
+  padding: 2.3125rem;
   background: rgba(255, 255, 255, 0.8);
-  border: 1px solid #FFFFFF;
-  box-shadow: 0px 36.2146px 48.2862px rgba(212, 217, 232, 0.2);
-  backdrop-filter: blur(8.93938px);
-  border-radius: 22px;
+  border: 1px solid var(--c_white);
+  box-shadow: 0rem 2.2634rem 3.0179rem rgba(212, 217, 232, 0.2);
+  backdrop-filter: blur(0.5587rem);
+  border-radius: 1.375rem;
+}
+.features_row>*:nth-of-type(2n+2) .feature_card{
+  background: rgba(255, 255, 255, 0.44);
+  border: 1px solid var(--c_white);
+  box-shadow: 0rem 2.2634rem 3.0179rem rgba(212, 217, 232, 0.2);
+  backdrop-filter: blur(0.5587rem);
+}
+.features_row>*:nth-of-type(3n+2) .feature_card{
+  margin-top: -135px;
+}
+.features_row>*:nth-of-type(3n+3) .feature_card{
+  margin-top: -251px;
 }
 .feature_icon{
-  width: 81px;
-  height: 81px;
+  width: 5.0625rem;
+  height: 5.0625rem;
   object-fit: contain;
-  margin-bottom: 34px;
+  margin-bottom: 2.125rem;
+}
+.feature_title{
+  font-size: var(--fs_22);
+  line-height: 1.3636;
+  margin-bottom: 0.5625rem;
+}
+.featrue_desc{
+  color: var(--c_gray2);
+  line-height: 1.5625;
+  margin-bottom: 2.125rem;
+}
+.feature_link{
+  text-decoration: none;
+}
+.features_box{
+  color: var(--c_black);
+  padding: 72px 106px 88px;
+  background: linear-gradient(90deg, #E0C3FC 0%, #8EC5FC 100%);
+  border: 10px solid rgba(255, 255, 255, 0.15);
+  border-radius: 93px;
+  background-size: calc(100% + 24px);
+  background-position: center;
+
 }
 /* ... end features section ... */
 
