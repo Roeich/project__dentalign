@@ -185,6 +185,11 @@ a{
 }
 
 
+@media(min-width:992px) {
+  .gx_lg_36{
+    --bs-gutter-x: 2.25rem;
+  }
+}
 @media(min-width:1200px) {
   .container {
     max-width: 75.25rem; /* 1180px; */
@@ -480,6 +485,10 @@ a{
   background-color: var(--bg_white);
   border-radius: 50rem;
 }
+.info_list.info_boxed2 li{
+  border-radius: 0.625rem;
+  margin-bottom: 0.375rem;
+}
 .info_list.info_boxed li::before{
   top: 0.6em;
   left: 1em;
@@ -608,5 +617,40 @@ a{
   margin-bottom: 0.8125rem;
 }
 /* ... end features section ... */
+
+/* ... start benefits section ... */
+.benefits_section{
+  padding-top: 8.875rem;
+}
+.benefits_imgBox{
+  position: relative;
+  margin: auto;
+  margin-top: 2.875rem;
+}
+.benefits_imgBox::before{
+  content: "";
+  display: block;
+  padding-bottom: 75.9229%;
+} 
+.benefits_img{
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.benetits_eva{
+  position: absolute;
+  top: -2.875rem;
+  right: 1.625rem;
+  width: 7.8125rem;
+  box-shadow: -0.2155rem 1.0776rem 2.5883rem rgba(0, 0, 0, 0.03), 0.916rem 0.916rem 10.7759rem rgba(64, 69, 79, 0.06);
+  border-radius: 0.6465rem;
+
+}
+
+
+/* ... end benefits section ... */
 
 /* _____________________ end home page _____________________ */
