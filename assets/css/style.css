@@ -30,7 +30,7 @@
   --c_gray: #717184;
   --c_gray2: #818898;
   --c_gray3: #8E8DA5;
-  --c_gray: #6E7788;
+  --c_gray4: #6E7788;
   --c_white: #ffffff;
   
   --bg_primary: #1D59F2;
@@ -98,7 +98,7 @@ a{
 .c_gray{color: var(--c_gray);}
 .c_gray2{color: var(--c_gray2);}
 .c_gray3{color: var(--c_gray3);}
-.c_gray{color: var(--c_gray);}
+.c_gray4{color: var(--c_gray4);}
 .c_white{color: var(--c_white);}
 
 .bg_primary{background-color: var(--bg_primary);}
@@ -197,6 +197,10 @@ a{
 @media(min-width:992px) {
   .gx_lg_36{
     --bs-gutter-x: 2.25rem;
+  }
+  .g_lg_28{
+    --bs-gutter-x: 1.75rem;
+    --bs-gutter-y: 1.75rem;
   }
 }
 @media(min-width:1200px) {
@@ -697,6 +701,9 @@ a{
   box-shadow: 0rem 0.6875rem 2.5625rem rgba(19, 30, 69, 0.06);
 
 }
+.newsletter_inpGrp .form-control{
+  background-color: transparent;
+}
 .form-control{
   font-weight: 500;
 }
@@ -774,27 +781,61 @@ a{
   margin-right: 2.1875rem;
   padding: 0.8125rem 0rem 1.875rem;
 }
-@media(max-width:991.98px){
-  html{
-    font-size: 14px;
-  }
-}
 /* ... end faqs section ... */
 
 /* ... start contact section ... */
 .contact_section{
-  padding-top: 150px;
+  padding-top: 9.375rem;
 }
 .contact_boxWrap{
-  padding: 45px 34px 39px;
+  position: relative;
+  padding: 2.8125rem 2.125rem 2.4375rem;
   background: linear-gradient(90deg, #E0C3FC 0%, #8EC5FC 100%), linear-gradient(90deg, #ED8AFE 0%, #0F7DFD 100%), linear-gradient(90deg, #E0C3FC 0%, #8EC5FC 100%), linear-gradient(90deg, #A1C4FD 0%, #C2E9FB 100%);
-  border-radius: 99px;
+  border-radius: 6.1875rem;
+}
+.contact_boxLogo{
+  position: absolute;
+  top: 4.375rem;
+  width: 8.125rem;
+  height: 8.125rem;
+  border-radius: 50%;
+  box-shadow: 0px 30px 96.5724px rgba(129, 141, 176, 0.2);
+}
+.contact_boxLogo1{
+  left: 1rem;
+}
+.contact_boxLogo2{
+  right: 1rem;
 }
 .contact_box{
-  padding: 57px 64px;
+  padding: 3.5625rem 4rem;
   background: var(--bg_white);
-  border-radius: 63px;
+  border-radius: 3.9375rem;
+}
+
+.form-label{
+  color: var(--c_dark4);
+  font-weight: 500;
+  font-family: var(--ff_Inter);
+  margin-bottom: 0.75rem;
+}
+.form-control{
+  color: var(--c_gray);
+  font-family: var(--fs_14);
+  padding: 0.9375rem 0.75rem;
+  background: rgba(130, 130, 130, 0.04);
+  border-radius: 0.75rem;
+  border: none;
+}
+.form-control:focus{
+  background: rgba(130, 130, 130, 0.02);
 }
 /* ... end contact section ... */
+
+/* ... start footer section ... */
+.footer{
+  padding: 98px 0px 80px;
+}
+/* ... end footer section ... */
 
 /* _____________________ end home page _____________________ */
