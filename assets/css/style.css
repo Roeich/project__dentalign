@@ -649,8 +649,38 @@ a{
   border-radius: 0.6465rem;
 
 }
-
-
 /* ... end benefits section ... */
+
+/* ... start newsletter section ... */
+.newsletter_section{
+  padding-top: 130px;
+}
+.newsletter_box{
+  position: relative;
+  padding: 36px 140px 0px;
+  background-color: var(--bg_white);
+  background-image: url("../img/home/newsletter-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid rgba(29, 29, 32, 0.08);
+  border-radius: 40px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.newsletter_boxLogo{
+  position: absolute;
+  top: 105px;
+  left: -51px;
+  width: 119px;
+  height: 119px;
+  border: 6.9186px solid rgba(255, 255, 255, 0.47);
+  box-shadow: 0px 27.4615px 88.4009px rgba(129, 141, 176, 0.2);
+  border-radius: 50rem;
+}
+.newsletter_inpGrp{
+  display: flex;
+  background-color: var(--bg_white);
+  border-radius: 50rem;
+}
+/* ... end newsletter section ... */
 
 /* _____________________ end home page _____________________ */
