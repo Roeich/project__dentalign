@@ -171,14 +171,9 @@ a{
 .btn_primaryGrd2:hover{
   background-size: 150%;
 }
-.btn_dark {
-  color: var(--c_white);
-  background: var(--bg_dark);
+.btn-dark {
+  --bs-btn-bg: var(--bg_dark);
   border: none;
-}
-.btn_dark:hover{
-  color: var(--c_white);
-  background: var(--bg_black);
 }
 .btn_shadow{
   box-shadow: -0.375rem 1.5rem 2.3687rem rgba(186, 196, 252, 0.31);
@@ -514,12 +509,16 @@ a{
 /* ... start features section ... */
 .features_section{
   padding-top: 9.125rem;
+  background-image: url("../img/home/feature-bg.png");
+  background-repeat: no-repeat;
+  background-position: right bottom 30%;
+  background-size: 24.25rem;
 }
 .title_badge{
   color: var(--c_primary);
   display: inline-block;
   padding: 0.25rem 0.875rem 0.25rem 0.75rem;
-  background: #FFFFFF;
+  background: var(--bg_white);
   border: 1px solid #DFE1E7;
   box-shadow: 0px 1px 3px rgba(13, 13, 18, 0.05), 0px 1px 2px rgba(13, 13, 18, 0.04);
   border-radius: 5rem;
@@ -703,13 +702,12 @@ a{
 }
 .newsletter_inpGrp .form-control{
   background-color: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0.4rem 0.75rem;
 }
 .form-control{
   font-weight: 500;
-}
-.newsletter_inpGrp .form-control{
-  border: none;
-  box-shadow: none;
 }
 .newsletter_inpGrp .btn{
   font-size: 0.875rem;
@@ -745,6 +743,10 @@ a{
 /* ... start faqs section ... */
 .faqs_section{
   padding-top: 5rem;
+  background-image: url("../img/home/faq-bg1.png"),url("../img/home/faq-bg2.png");
+  background-repeat: no-repeat;
+  background-position: left top 17.5rem, right bottom -15rem;
+  background-size: 41.0625rem, 30rem;
 }
 .accordion-item{
   margin-bottom: 1.3125rem;
@@ -834,7 +836,38 @@ a{
 
 /* ... start footer section ... */
 .footer{
-  padding: 98px 0px 80px;
+  padding: 6.125rem 0rem 5rem;
+}
+.footer_top{
+  padding-bottom: 3.125rem;
+  border-bottom: 1px solid #1C284233;
+  margin-bottom: 3.125rem;
+}
+.footer_logo{
+  width: 11.125rem;
+  height: 2.375rem;
+  object-fit: contain;
+}
+
+.footer_socialNav .nav-link{
+  padding: 0rem;
+}
+.footer_bottomNav .nav-item{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-left: 1px solid #DFE8F6;
+}
+.footer_bottomNav .nav-item:first-of-type{
+  border-left: none;
+}
+.footer_bottomNav .nav-item:last-of-type{
+  padding-right: 0rem;
+}
+.footer_bottomNav .nav-link{
+  padding: 0rem;
+}
+.footer_bottomNav .nav-link:hover{
+  color: var(--c_primary);
 }
 /* ... end footer section ... */
 
