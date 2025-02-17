@@ -11,9 +11,9 @@ $(document).ready(function() {
 
     // features slider section
     $(".ft_slider1").owlCarousel({
-        items: 3, 
+        items: 2, 
         loop: true,
-        margin: 16,
+        margin: 10,
         autoplay: true,
         autoplayTimeout: 3000, 
         autoplayHoverPause: false,
@@ -21,12 +21,22 @@ $(document).ready(function() {
         smartSpeed: 3000, 
         slideTransition: 'linear', 
         dots: false,
-        nav: false
+        nav: false,
+        responsive:{
+            576:{
+                items:2,
+                margin:12
+            },
+            768:{
+                items:3,
+                margin:16
+            }
+        }
     });
     $(".ft_slider2").owlCarousel({
-        items: 3, 
+        items: 2, 
         loop: true,
-        margin: 16,
+        margin: 10,
         autoplay: true,
         autoplayTimeout: 2500, 
         autoplayHoverPause: false,
@@ -34,7 +44,17 @@ $(document).ready(function() {
         smartSpeed: 2500, 
         slideTransition: 'linear', 
         dots: false,
-        nav: false
+        nav: false,
+        responsive:{
+            576:{
+                items:2,
+                margin:12
+            },
+            768:{
+                items:3,
+                margin:16
+            }
+        }
     });
     
 
