@@ -84,6 +84,15 @@ $(window).on("load",function(){
             /* _____________________ start home page _____________________ */
     
             // ........ hero section 
+            if($(".hero_section").length>0){
+                let hero_tl=gsap.timeline({
+                    duration:1
+                });
+                hero_tl
+                .fromTo(".hero_title",{yPercent:isDesktop?90:50,scale:isDesktop?1.3:1.1},{yPercent:0,scale:1})
+                .fromTo(".hero_desc",{yPercent:200,opacity:0},{yPercent:0,opacity:1})
+                .fromTo(".hero_act",{yPercent:200,opacity:0},{yPercent:0,opacity:1})
+            }
             if($(".hero_imgWrapper").length>0){
                 let hero_imgTl=gsap.timeline({
                     scrollTrigger:{
@@ -95,20 +104,11 @@ $(window).on("load",function(){
                         markers:true
                     }
                 });
-                // let hero_tl=gsap.timeline();
                 hero_imgTl
                 .fromTo(".hero_img1",{yPercent:25,scale:2,rotateX:30},{yPercent:0,scale:1,rotateX:0})
-                .fromTo(".hero_img2",{xPercent:-200},{xPercent:0})
+                .fromTo(".hero_img2",{xPercent:-300},{xPercent:0})
                 .fromTo(".hero_logo1,.hero_logo2",{xPercent:200,rotate:180},{xPercent:0,rotate:0},"<")
-                // .fromTo(".hero_title",{scale:0.86},{ scale:1})
-                // .fromTo(".hero_desc",{ scale:isMobile?1:0.5, opacity:isMobile?1:0, y:isMobile?0:100},{ scale:1, opacity:1, y:0}, 0 )
-                // .fromTo(".hero_bg",{ backgroundSize: "110%" },{ backgroundSize: "120%"},0)
-                // .fromTo(".hero_moon",{ yPercent:0, scale:1, rotation:0},{ yPercent:-70, scale:0.8, rotation:15},0)
-                // .fromTo(".hero_bgSliderBox_1 .hero_bgSlider",{ xPercent:0, scale:1 },{ xPercent:-95, scale:1.5 },0)
-                // .fromTo(".hero_bgSliderBox_2 .hero_bgSlider",{ xPercent:0, scale:1 },{ xPercent:95, scale:1.5 },0)
-                // .fromTo(".about_bgImg",{ scale:1,filter:isMobile?"blur(2px)":"blur(5px)"},{ scale:1.2,filter:"blur(0px)"},0)
-                // .fromTo(".hero_bgSliderBox_1,.hero_bgSliderBox_2,.hero_moon",{ filter:"blur(0px)" },{ filter:"blur(5px)" },"<")
-                // .fromTo(".hero_content",{ opacity:1 },{ opacity:0 },isDesktop?"+=1":"+=0.3");
+                .fromTo(".hero_playBtn",{opacity:0},{opacity:1},"<")
             }
 
             // ........ about section 
