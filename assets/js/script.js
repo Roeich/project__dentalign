@@ -61,3 +61,7 @@ $(document).ready(function() {
     /* _________________ end home page _________________ */
     
 });
+
+$(window).on("load", function() {
+    $(".header_logo").addClass("loaded");
+});
