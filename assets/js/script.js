@@ -64,9 +64,7 @@ $(document).ready(function() {
 
 $(window).on("load",function(){
     // preloader
-    $("#preloader").fadeOut(500, function() {
-        $("#content").fadeIn(500);
-    });
+    $("#preloader").fadeOut(500);
     // gsap animation
     gsap.registerPlugin(ScrollTrigger);
     let mm = gsap.matchMedia();
