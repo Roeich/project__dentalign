@@ -459,7 +459,7 @@ a{
   color: var(--c_white);
   padding: 9.5rem 0rem 0rem;
   text-align: center;
-  background-image: url("../img/home/pattern-3.svg"), url("../img/home/hero-bg.png");
+  background-image: url("../img/home/pattern-3.svg"), url("../img/home/hero-bg.webp");
   background-repeat: no-repeat;
   background-size:31.25rem, 100%;
   background-position: right bottom -7%, top center;
@@ -709,7 +709,7 @@ a{
 /* ... start features section ... */
 .features_section{
   padding-top: 9.125rem;
-  background-image: url("../img/home/feature-bg.png");
+  background-image: url("../img/home/feature-bg.webp");
   background-repeat: no-repeat;
   background-position: right bottom 30%;
   background-size: 24.25rem;
@@ -942,7 +942,7 @@ a{
   position: relative;
   padding: 2.25rem 8.75rem 0rem;
   background-color: var(--bg_white);
-  background-image: url("../img/home/newsletter-bg.png");
+  background-image: url("../img/home/newsletter-bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   border: 1px solid rgba(29, 29, 32, 0.08);
@@ -1060,7 +1060,7 @@ a{
 /* ... start faqs section ... */
 .faqs_section{
   padding-top: 5rem;
-  background-image: url("../img/home/faq-bg1.png"),url("../img/home/faq-bg2.png");
+  background-image: url("../img/home/faq-bg1.webp"),url("../img/home/faq-bg2.webp");
   background-repeat: no-repeat;
   background-position: left top 17.5rem, right bottom -15rem;
   background-size: 41.0625rem, 30rem;
