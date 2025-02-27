@@ -198,7 +198,43 @@ a{
   text-decoration: underline;
 }
 
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
 
+/* Preloader Styles */
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* Simple Spinner */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ddd;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Spinner Animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes floating {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
 @media(min-width:992px) {
   .gx_lg_36{
     --bs-gutter-x: 2.25rem;
@@ -403,10 +439,11 @@ a{
   color: var(--c_white);
   padding: 9.5rem 0rem 0rem;
   text-align: center;
-  background-image:url("../img/home/pattern-3.svg"), url("../img/home/hero-bg.png");
+  background-image: url("../img/home/pattern-3.svg"), url("../img/home/hero-bg.png");
   background-repeat: no-repeat;
   background-size:31.25rem, 100%;
   background-position: right bottom -7%, top center;
+
 }
 .hero_imgWrapper{
   position: relative;
@@ -490,6 +527,11 @@ a{
       -ms-transform: scale(0.95);
           transform: scale(0.95);
 }
+@media(min-width:2800px){
+  .hero_section{
+    background-position: right bottom -7%, center bottom;
+  }
+}
 @media(max-width:1199.98px){
   .hero_section {
     background-size: 20rem, 140%;
@@ -523,7 +565,7 @@ a{
     top: 35%;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
   .hero_section {
     background-size: 18rem, 370%;
   }
@@ -541,6 +583,9 @@ a{
   .hero_playBtn {
     left: 45%;
     top: 32%;
+  }
+  .hero_imgWrapper{
+    perspective: 95vw;
   }
 }
 /* ... end hero section ... */
