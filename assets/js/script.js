@@ -15,10 +15,10 @@ $(document).ready(function() {
         loop: true,
         margin: 10,
         autoplay: true,
-        autoplayTimeout: 5000, 
+        autoplayTimeout: 8000, 
         autoplayHoverPause: false,
-        autoplaySpeed: 5000,
-        smartSpeed: 5000, 
+        autoplaySpeed: 8000,
+        smartSpeed: 8000, 
         slideTransition: 'linear', 
         dots: false,
         nav: false,
@@ -38,10 +38,10 @@ $(document).ready(function() {
         loop: true,
         margin: 10,
         autoplay: true,
-        autoplayTimeout: 4500, 
+        autoplayTimeout: 7000, 
         autoplayHoverPause: false,
-        autoplaySpeed: 4500,
-        smartSpeed: 4500, 
+        autoplaySpeed: 7000,
+        smartSpeed: 7000, 
         slideTransition: 'linear', 
         dots: false,
         nav: false,
@@ -64,7 +64,7 @@ $(document).ready(function() {
 
 $(window).on("load",function(){
     // preloader
-    $("#preloader").fadeOut(500);
+    $("#preloader").fadeOut(0);
     // gsap animation
     gsap.registerPlugin(ScrollTrigger);
     let mm = gsap.matchMedia();
